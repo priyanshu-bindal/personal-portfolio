@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Space_Mono, Space_Grotesk, Bebas_Neue, Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
@@ -41,11 +41,13 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
+
 export const metadata: Metadata = {
-  title: {
-    default: "Priyanshu Bindal | Full Stack & Mobile Developer",
-    template: "%s | Priyanshu Bindal",
-  },
+  metadataBase: new URL("https://priyanshubindal.in"),
+  title: "Priyanshu Bindal | Full Stack Developer",
   description: "Portfolio of Priyanshu Bindal, a Full Stack and Mobile Developer specializing in modern web experiences, Next.js, React, and Flutter.",
   keywords: ["Full Stack Developer", "Mobile Developer", "Next.js", "React", "Flutter", "TypeScript", "Priyanshu Bindal"],
   authors: [{ name: "Priyanshu Bindal" }],
@@ -68,16 +70,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://priyanshubindal.in",
-    title: "Priyanshu Bindal | Full Stack & Mobile Developer",
+    title: "Priyanshu Bindal | Full Stack Developer",
     description: "Portfolio of Priyanshu Bindal, a Full Stack and Mobile Developer specializing in modern web experiences.",
     siteName: "Priyanshu Bindal Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Priyanshu Bindal | Full Stack & Mobile Developer",
+    title: "Priyanshu Bindal | Full Stack Developer",
     description: "Portfolio of Priyanshu Bindal, a Full Stack and Mobile Developer specializing in modern web experiences.",
     creator: "@priyanshubindal",
   },
+  manifest: "/site.webmanifest",
 };
 
 const jsonLd = {
