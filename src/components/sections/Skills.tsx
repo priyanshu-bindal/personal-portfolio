@@ -87,7 +87,7 @@ export default function Skills() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-mono font-bold tracking-[2px] uppercase text-white mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+          <h2 className="text-4xl md:text-6xl font-mono font-bold tracking-[2px] uppercase text-[#C0FFFF] mb-4 drop-shadow-[0_0_10px_rgba(192,255,255,0.4)]">
             SKILLS
           </h2>
         </ScrollReveal>
